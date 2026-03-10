@@ -3,17 +3,19 @@ import { ImageSourcePropType, StyleSheet } from 'react-native';
 
 type Props = {
   imgSource: ImageSourcePropType;
+  imgSource2: ImageSourcePropType;
 };
 
 export default function ImageViewer({ imgSource }: Props) {
-  return <Image source={imgSource} style={styles.image} />;  
+  return <Image source={imgSource} style={styles.image}/>;
 }
 
 const styles = StyleSheet.create({
   image: {
-    width: 220,
-    height: 440,
+    width: '48%',
+    height: 350,
     borderRadius: 20,
-    flex: 1,
+    marginBottom: 10,
+    padding: 50,
   },
 });

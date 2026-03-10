@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
     flexDirection: "row",
+    flexWrap: "wrap",
     gap: 10,
   },
   text: {
