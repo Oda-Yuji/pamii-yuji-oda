@@ -1,9 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
+import ImageViewer from '@/components/ImageViewer';
+import { StyleSheet, Image, Text, View } from 'react-native';
 
-export default function AboutScreen() {
+const Img1 = { src: require('@/assets/images/img1.jpg'), height: 350 };
+
+export default function Search() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Search screen</Text>
+        <Image style={styles.imageTop} source={require('@/assets/images/search/image-top.jpg')}/>
+      <View style={styles.imageContainer}>
+      </View>
     </View>
   );
 }
@@ -11,11 +16,13 @@ export default function AboutScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    overflowY: "auto",
+    gap: 10,
   },
-  text: {
-    color: '#fff',
-  },
+  imageTop: {
+    height: 200,
+    width: '100%',
+  }
 });

@@ -3,7 +3,7 @@ import { ImageSourcePropType, StyleSheet } from 'react-native';
 
 type Props = {
   imgSource: ImageSourcePropType;
-  height?: number;
+  height: number;
 };
 
 export default function ImageViewer({ imgSource, height }: Props) {
@@ -17,7 +17,7 @@ export default function ImageViewer({ imgSource, height }: Props) {
 
 const styles = StyleSheet.create({
   image: {
-    width: '48%',
+    width: '100%',
     borderRadius: 20,
     marginBottom: 10,
     padding: 50,
