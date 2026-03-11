@@ -22,7 +22,7 @@ export default function TabLayout() {
         options={{ 
           title: 'Página inicial',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'home-outline' : 'home-outline'} color={color} size={24}/>
           ),
         }}
       />
@@ -31,7 +31,7 @@ export default function TabLayout() {
         options={{ 
           title: 'Pesquisar',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'search' : 'search'} color={color} size={24}/>
           ),
         }} 
       />
@@ -40,7 +40,16 @@ export default function TabLayout() {
         options={{ 
           title: 'Caixa de...',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'ellipsis-horizontal-circle-outline' : 'ellipsis-horizontal-circle-outline'} color={color} size={24}/>
+          ),
+        }} 
+      />
+      <Tabs.Screen 
+        name="profile" 
+        options={{ 
+          title: 'Salvos',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'radio-button-off' : 'radio-button-off'} color={color} size={24}/>
           ),
         }} 
       />
